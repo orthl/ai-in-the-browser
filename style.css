@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'Affogato-Regular';
+    src: url('webfont/Affogato-Regular.eot');
+    src: url('webfont/Affogato-Regular.eot?#iefix') format('embedded-opentype'),
+         url('webfont/Affogato-Regular.woff') format('woff'),
+         url('webfont/Affogato-Regular.woff2') format('woff2'),
+         url('webfont/Affogato-Regular.ttf') format('truetype'),
+         url('webfont/Affogato-Regular.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Affogato-Bold';
+    src: url('webfont/Affogato-Bold.eot');
+    src: url('webfont/Affogato-Bold.eot?#iefix') format('embedded-opentype'),
+         url('webfont/Affogato-Bold.woff') format('woff'),
+         url('webfont/Affogato-Bold.woff2') format('woff2'),
+         url('webfont/Affogato-Bold.ttf') format('truetype'),
+         url('webfont/Affogato-Bold.svg') format('svg');
+}
+
+body {
+    font-family: 'Affogato-Regular', sans-serif;
+    font-size: 18px;
+    background-color: #F6F7FB;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #141933;
+}
+
+.card {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-family: 'Affogato-Bold', sans-serif;
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Affogato-Regular', sans-serif;
+    font-size: 18px;
+}
+
+.instructions {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group,
+.result-container {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+textarea,
+select.form-control, input.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Affogato-Regular', sans-serif;
+    background-color: #F6F7FB;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+textarea:focus, input.form-control,
+select.form-control:focus {
+    border-color: #364AB1;
+    box-shadow: 0 0 8px rgba(54, 74, 177, 0.2);
+    outline: none;
+    background-color: #FFFFFF;
+}
+
+textarea{
+    height: 100px;
+}
+
+.result-box {
+    border: 1px solid #ddd;
+    background: #F6F7FB;
+    padding: 15px 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.btn-primary{
+    border: 2px solid #31418C;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.btn-primary {
+    background-color: #364AB1;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #31418C;
+    border-color: #31418C;
+}
+
+.footer {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0 5px;
+}
+
+.footer-menu a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    h1,
+    .instructions {
+        text-align: left;
+    }
+
+    .card {
+        padding: 20px;
+        width: 90%;
+    }
+}
+
+#image-container {
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+    border-radius: 12px;
+}
+
+#image-container>img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.bounding-box {
+    position: absolute;
+    box-sizing: border-box;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 12px;
+}
+
+.bounding-box-label {
+    color: white;
+    position: absolute;
+    font-size: 18px;
+    margin-top: -16px;
+    margin-left: -2px;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.main-menu {
+    font-size: 18px;
+}
